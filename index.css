@@ -1,0 +1,41 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-deep: #050a14;
+  --bg-card: #0d1526;
+  --bg-card2: #091020;
+  --accent-cyan: #00d4ff;
+  --accent-teal: #00b4a0;
+  --accent-blue: #1a6fff;
+  --text-primary: #e8f4ff;
+  --text-secondary: #7a9fc0;
+  --text-muted: #3d5a78;
+  --border: rgba(0, 212, 255, 0.12);
+  --glow-cyan: 0 0 40px rgba(0, 212, 255, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb { background: var(--accent-cyan); border-radius: 3px; }
+
+#root {
+  width: 100%;
+  max-width: 100%;
+}
